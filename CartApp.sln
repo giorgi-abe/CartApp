@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartApp", "CartApp\CartApp.csproj", "{D6A76F9A-E6DE-4A2E-9BED-DF7D077F4B4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CartApp", "CartApp\CartApp.csproj", "{D6A76F9A-E6DE-4A2E-9BED-DF7D077F4B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDatabaseModels", "ApplicationDatabaseModels\ApplicationDatabaseModels.csproj", "{8CC536E4-972E-4A36-B95D-42F8F1F26B81}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDatabaseModels", "ApplicationDatabaseModels\ApplicationDatabaseModels.csproj", "{8CC536E4-972E-4A36-B95D-42F8F1F26B81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDomainCore", "ApplicationDomainCore\ApplicationDomainCore.csproj", "{D67F0206-EBEB-4E50-90D7-CA4FE649B2CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDomainCore", "ApplicationDomainCore\ApplicationDomainCore.csproj", "{D67F0206-EBEB-4E50-90D7-CA4FE649B2CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDomainEntity", "ApplicationDomainEntity\ApplicationDomainEntity.csproj", "{9C1BEFD2-5162-459C-B074-851474453C58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDomainEntity", "ApplicationDomainEntity\ApplicationDomainEntity.csproj", "{9C1BEFD2-5162-459C-B074-851474453C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationUiServices", "ApplicationUiServices\ApplicationUiServices.csproj", "{7F614634-6818-4EB6-96BA-8F1803ED2B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDtos", "ApplicationDtos\ApplicationDtos.csproj", "{256C2E25-2C89-4CD7-AE0A-227ED114EC35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCQRS", "ApplicationCQRS\ApplicationCQRS.csproj", "{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{9C1BEFD2-5162-459C-B074-851474453C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1BEFD2-5162-459C-B074-851474453C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1BEFD2-5162-459C-B074-851474453C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F614634-6818-4EB6-96BA-8F1803ED2B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F614634-6818-4EB6-96BA-8F1803ED2B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F614634-6818-4EB6-96BA-8F1803ED2B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F614634-6818-4EB6-96BA-8F1803ED2B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{256C2E25-2C89-4CD7-AE0A-227ED114EC35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{256C2E25-2C89-4CD7-AE0A-227ED114EC35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{256C2E25-2C89-4CD7-AE0A-227ED114EC35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{256C2E25-2C89-4CD7-AE0A-227ED114EC35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

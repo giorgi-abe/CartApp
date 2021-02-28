@@ -1,4 +1,7 @@
+using ApplicationDomainCore;
+using ApplicationDomainCore.Abstraction;
 using ApplicationDomainEntity.Db;
+using ApplicationUiServices.Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,6 +32,9 @@ namespace CartApp
         {
             services.AddDbContext<ApplicationDbContext>
                     (options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped(typeof(IProductRepository<>), typeof(ProductRepository<>));
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddAutoMapper(typeof(AutoMapping));
             services.AddControllers();
         }
 
