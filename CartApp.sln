@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDomainCore", "Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDomainEntity", "ApplicationDomainEntity\ApplicationDomainEntity.csproj", "{9C1BEFD2-5162-459C-B074-851474453C58}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationUiServices", "ApplicationUiServices\ApplicationUiServices.csproj", "{7F614634-6818-4EB6-96BA-8F1803ED2B04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationUiServices", "ApplicationUiServices\ApplicationUiServices.csproj", "{7F614634-6818-4EB6-96BA-8F1803ED2B04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDtos", "ApplicationDtos\ApplicationDtos.csproj", "{256C2E25-2C89-4CD7-AE0A-227ED114EC35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDtos", "ApplicationDtos\ApplicationDtos.csproj", "{256C2E25-2C89-4CD7-AE0A-227ED114EC35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCQRS", "ApplicationCQRS\ApplicationCQRS.csproj", "{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCQRS", "ApplicationCQRS\ApplicationCQRS.csproj", "{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationAuthentication", "ApplicationAuthentication\ApplicationAuthentication.csproj", "{3BDFEF3C-9E5C-4091-BBD3-B4C21868A259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDDA44E7-24F3-4DAB-8570-D1EECE1703CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BDFEF3C-9E5C-4091-BBD3-B4C21868A259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BDFEF3C-9E5C-4091-BBD3-B4C21868A259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BDFEF3C-9E5C-4091-BBD3-B4C21868A259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BDFEF3C-9E5C-4091-BBD3-B4C21868A259}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

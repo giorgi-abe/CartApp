@@ -1,4 +1,5 @@
 ﻿using ApplicationDatabaseModels;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace ApplicationDomainEntity.Db
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User,UserRole,string>
     {
         public ApplicationDbContext() { }
 
@@ -14,7 +15,6 @@ namespace ApplicationDomainEntity.Db
         public DbSet<Food> Food { get; set; }
         public DbSet<Furniture> Furnitures { get; set; }
         public DbSet<Technique> Techniques { get; set; }
-        public DbSet<User> Users { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 

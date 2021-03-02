@@ -1926,6 +1926,16 @@
         "runtime": {
           "bin/placeholder/ApplicationDomainEntity.dll": {}
         }
+      },
+      "ApplicationDtos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ApplicationDtos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApplicationDtos.dll": {}
+        }
       }
     }
   },
@@ -6646,12 +6656,18 @@
       "type": "project",
       "path": "../ApplicationDomainEntity/ApplicationDomainEntity.csproj",
       "msbuildProject": "../ApplicationDomainEntity/ApplicationDomainEntity.csproj"
+    },
+    "ApplicationDtos/1.0.0": {
+      "type": "project",
+      "path": "../ApplicationDtos/ApplicationDtos.csproj",
+      "msbuildProject": "../ApplicationDtos/ApplicationDtos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ApplicationDatabaseModels >= 1.0.0",
       "ApplicationDomainEntity >= 1.0.0",
+      "ApplicationDtos >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 5.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.3",
@@ -6690,6 +6706,9 @@
             },
             "C:\\Users\\User\\OneDrive\\Desktop\\CartApp\\ApplicationDomainEntity\\ApplicationDomainEntity.csproj": {
               "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\CartApp\\ApplicationDomainEntity\\ApplicationDomainEntity.csproj"
+            },
+            "C:\\Users\\User\\OneDrive\\Desktop\\CartApp\\ApplicationDtos\\ApplicationDtos.csproj": {
+              "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\CartApp\\ApplicationDtos\\ApplicationDtos.csproj"
             }
           }
         }

@@ -1,3 +1,4 @@
+using ApplicationDatabaseModels;
 using ApplicationDomainCore;
 using ApplicationDomainCore.Abstraction;
 using ApplicationDomainEntity.Db;
@@ -5,6 +6,7 @@ using ApplicationUiServices.Mapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -34,6 +36,7 @@ namespace CartApp
                     (options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped(typeof(IProductRepository<>), typeof(ProductRepository<>));
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddIdentity<User, UserRole>().AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
             services.AddAutoMapper(typeof(AutoMapping));
             services.AddControllers();
         }
